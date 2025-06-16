@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Stenungsunds Innebandy – Sponsorbroschyr</title>
+  <style>
+    .nav-button {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 32px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      text-decoration: none;
+      z-index: 999;
+      transition: background-color 0.3s;
+    }
+
+    .nav-button:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .nav-button.back {
+      left: 20px;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      color: #111;
+    }
+
+.header {
+  background: linear-gradient(
+    to right,
+    #000000 0%,
+    #000000 30%,
+    #0561a8 70%,
+    #0561a8 100%
+  );
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+
+
+
+    .header img {
+      width: 60px;
+      margin-bottom: 5px;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      margin: 5px 0 0;
+    }
+
+    .header h2 {
+      font-weight: normal;
+      font-size: 16px;
+      margin: 5px 0;
+      color: #ccc;
+    }
+
+    .content {
+      padding: 180px 20px 40px;
+      max-width: 900px;
+      margin: auto;
+      position: relative;
+      background: rgba(255, 255, 255, 0.85);
+    }
+
+    body::before {
+      content: "";
+      background: url("BILD.jpg") no-repeat center center fixed;
+      background-size: cover;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.2;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h3 {
+      color: #003366;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .section ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .section ul li {
+      margin-bottom: 5px;
+    }
+
+    .form-container {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .form-container input,
+    .form-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .form-container button {
+      background-color: #003366;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .form-container button:hover {
+      background-color: #005099;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #003366;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="LOGGA.png" alt="Stenungsunds Innebandy Logga">
+    <h1>Stora Hjärtan, Randiga Hjältar</h1>
+    <h2>Stenungsunds Innebandy</h2>
+  </div>
+
+  <div class="content">
+    <div class="section">
+      <h3>Kontakta oss</h3>
+      <p>
+        Fyll i formuläret nedan om du vill bli sponsor eller har fler frågor. Vi ser fram emot att höra från dig!
+      </p>
+    </div>
+
+    <div class="form-container">
+      <form action="mailto:89ers.kansli@gmail.com" method="post" enctype="text/plain">
+        <label for="company-name">Företagsnamn:</label>
+        <input type="text" id="company-name" name="company-name" required>
+
+        <label for="contact-name">Kontaktperson:</label>
+        <input type="text" id="contact-name" name="contact-name" required>
+
+        <label for="email">E-postadress:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Telefonnummer:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <button type="submit">Skicka</button>
+      </form>
+    </div>
+
+    <!-- Kontaktuppgifter under formuläret -->
+    <div class="contact-info">
+      <h3>Våra kontaktuppgifter:</h3>
+      <p>
+        E-post: <a href="mailto:sponsorer@stenungsundinnebandy.se">89ers.kansli@gmail.com</a><br>
+        Telefon: 0303-123 45 67<br>
+        Adress: Stenungsunds Innebandyklubb, Nösnäsvägen 2, 444 47 Stenungsund
+      </p>
+    </div>
+  </div>
+
+  <!-- Bakåtknapp -->
+  <a href="sponsorpaket.html" class="nav-button back">&#8592;</a>
+
+</body>
+</html>
+
